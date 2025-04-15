@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulasi Gacha ToteAlly</title>
+  <link rel="stylesheet" href="Toteally.css" />
+</head>
+<body>
+
+  <img src="logo.png" alt="Logo Kecil" class="corner-logo" />
+
+  <h1>ToteAlly!</h1>
+  <p>Gotta collect them All!</p>
+
+  <button class="button" onclick="gacha()">Test Your Luck!</button>
+
+  <div class="result" id="result"></div>
+
+  <!-- Gambar tas tertutup awal -->
+  <div id="bagClosedContainer">
+    <img src="bag-closed.png" id="bagClosed" class="bag-image" alt="Tas Tertutup" />
+  </div>
+
+  <!-- Loader -->
+  <img src="logo.png" alt="Loading Logo" id="loaderLogo" class="logo-loader" />
+
+  <!-- Hasil gacha dan tas terbuka -->
+  <div id="gachaSection">
+    <div id="gachaResult"></div>
+    <img src="bag-open.png" id="bagOpen" class="bag-image hidden" alt="Tas Terbuka" />
+  </div>
+
+  <script src="Toteally.js"></script>
+</body>
+</html>

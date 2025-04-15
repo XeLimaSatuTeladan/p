@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .corner-logo {
+    position: fixed;
+    top: 10px;
+    left: 400px;
+    width: 60px;
+    height: auto;
+    z-index: 999;
+    opacity: 0.9;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #gachaResult img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .logo-loader {
+    display: none;
+    margin: 30px auto;
+    width: 120px;
+    height: 120px;
+    animation: scaleUp 3s ease-in-out infinite;
+  }
+  
+  @keyframes scaleUp {
+    0% { transform: scale(0.8); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(0.8); opacity: 0.5; }
+  }
+  
+  .bag-image {
+    width: 200px;
+    height: auto;
+    margin: 20px auto;
+    transition: all 0.8s ease;
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #bagOpen {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  
+  #bagOpen.show {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+  }
+  
